@@ -1,1 +1,43 @@
-cord1
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>ToDoリスト</h1>
+  <div class="radio_button">
+    <input type="radio" name="syurui" checked="checked" id="radioAll" onchange="radioChange()" value="all">すべて
+    <input type="radio" name="syurui" id="radioWork" onchange="radioChange()" value="doing">作業中
+    <input type="radio" name="syurui" id="radioDone" onchange="radioChange()" value="done">完了 </div>
+  <div class="task">
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>コメント</td>
+          <td>状態</td>
+        </tr>
+      </thead>
+      <tbody id="add_value">
+
+      </tbody>
+    </table>
+  </div>
+  <header class="header">
+    <h2>新規タスクの追加</h2>
+  </header>
+  <div class="textbox">
+    <label for="input-todo-box"></label>
+    <input type="text" id="add_text" value="">
+    <input type="button" value="追加" class="add_task_button" id="add_btn">
+  </div>
+
+  <script src="git.js"></script>
+
+</body>
+
+</html>
